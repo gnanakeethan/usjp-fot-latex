@@ -1,0 +1,195 @@
+\documentclass[12pt,a4paper,oneside]{article}
+
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{multicol}
+\usepackage[a4paper,top=25mm,left=40mm,right=30mm,bottom=25mm]{geometry}
+\usepackage[monochrome]{color}
+\usepackage{fontspec}
+\usepackage{tocloft}
+\usepackage[nottoc,numbib]{tocbibind}
+\usepackage{fancyhdr}
+\usepackage{fancybox} 
+\usepackage{setspace}
+\usepackage{ccicons}
+\usepackage{anyfontsize}
+\usepackage{lipsum}
+\usepackage{indentfirst}
+\usepackage{soul}
+\usepackage[hidelinks]{hyperref}
+\usepackage{mathtools}   
+\usepackage{tikz}
+\usepackage{csquotes}
+\usepackage{wrapfig}
+\usepackage{longtable}
+\usepackage[acronym,toc]{glossaries}
+\usetikzlibrary{calc}
+\usepackage{float}
+\usepackage[
+backend=biber,
+style=ieee,
+]{biblatex}
+\addbibresource{manufacturing.bib}
+\usepackage{afterpage}
+\usepackage[intoc]{nomencl}
+\makenomenclature
+\glstoctrue
+\setacronymstyle{long-short}
+\newglossaryentry{ex}{name={sample},description={an example}}
+\newacronym{svm}{SVM}{support vector machine}\newcommand{\listappendicesname}{Appendices}
+\makenoidxglossaries
+\newlistof{appendices}{apc}{\listappendicesname}
+\newcommand{\appendices}[1]{\addcontentsline{apc}{appendices}{#1}}
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+\newpage}
+\setmainfont[Ligatures=TeX]{Times New Roman}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\newcommand{\newappendix}[1]{\section*{#1}\appendices{#1}}
+
+\parindent0mm
+
+% Turn on the style
+\pagestyle{fancy}
+% Clear the header and footer
+\fancyhead{}
+\fancyfoot{}
+% Set the right side of the footer to be the page number
+\fancyfoot[R]{\thepage}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{tikzpicture}[remember picture, overlay]
+        \draw[line width = 1pt] ($(current page.north west) + (40mm,-10mm)$) rectangle ($(current page.south east) + (-40mm,10mm)$);
+    \end{tikzpicture}
+
+    \begin{flushright}
+        %\textbf{\uppercase{\fontsize{12}{18} \selectfont {Group No: E2}}}
+    \end{flushright}
+
+
+    \center % Center everything on the page
+    {\setstretch{1.5}
+        \includegraphics[width=2in,keepaspectratio]{logo.png}\\[0.5cm]
+        \fontsize{16pt}{24}\selectfont \textbf{Project Report}\\[0.5cm]
+        \fontsize{16pt}{24}\selectfont \textbf{EGT 41206}\\[0.75cm]
+        \fontsize{24pt}{30}\selectfont \textbf{\uppercase{Project Title Here}}\\[1.5cm]
+        \fontsize{16}{24}\selectfont \textbf{\uppercase{Manufacturing Technology}}\\[1.5cm]
+        \fontsize{16pt}{24}\selectfont \textbf{By}\\[0.5cm]
+        \fontsize{12pt}{12}\selectfont {
+        }
+        \vspace*{\fill}
+        \fontsize{12pt}{12}\selectfont \textbf { <Your Name Here> \\ <Your Index No here>}\\[0.5cm]
+
+
+        \vspace*{\fill}
+        \fontsize{12pt}{12}\selectfont \textbf {Department of Engineering Technology \\ Faculty of Technology\\University of Sri Jayewardenepura\\ Sri Lanka \\ }
+        \vspace*{\fill}
+
+        \today
+    }
+
+    %\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+
+\pagenumbering{roman}
+
+\newpage
+\setstretch{1.5}
+\newpage
+\addcontentsline{toc}{section}{Acknowledgements}
+\section*{Acknowledgements}
+\lipsum[1]
+\newpage
+\tableofcontents
+\newpage
+\listoffigures
+\listoftables
+\printnomenclature
+\printnoidxglossary[sort=word]% main glossary
+\printnoidxglossary[type=symbols,sort=use]% symbols glossary
+\newpage
+\addcontentsline{toc}{section}{List of Appendices}
+\listofappendices
+
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\setstretch{1.25}
+\section{Title}
+\nomenclature{$a$}{The number of angels per unit area}%
+\nomenclature{$N$}{The number of angels per needle point}%
+\nomenclature{$A$}{The area of the needle point}% The equation $\sigma = m a$% follows easily
+\nomenclature{$\sigma$}{The total mass of angels per unit area}%
+\nomenclature{$m$}{The mass of one angel} 
+\subsection{Sub Title}
+First use: \gls{ex} \gls{svm}. Second use: \gls{svm}.
+\subsubsection{Sub Sub Title}
+\lipsum[1]
+\subsubsection{Sub Sub Title}
+\lipsum[1]
+\subsection{Sub Title}
+\subsubsection{Sub Sub Title}
+\lipsum[1]
+\subsubsection{Sub Sub Title}
+\lipsum[1]
+\subsection{Sub Title}
+\subsubsection{Sub Sub Title}
+\lipsum[1]
+\subsubsection{Sub Sub Title}
+\lipsum[1]
+\newpage
+\section{Title}
+\subsection{Sub Title}
+\subsubsection{Sub Sub Title}
+\lipsum[1]
+\subsubsection{Sub Sub Title}
+\lipsum[1]
+\subsection{Sub Title}
+\subsubsection{Sub Sub Title}
+\lipsum[1]
+\subsubsection{Sub Sub Title}
+\lipsum[1]
+\subsection{Sub Title}
+\subsubsection{Sub Sub Title}
+\lipsum[1]
+\subsubsection{Sub Sub Title}
+\lipsum[1]
+\newpage
+\section{Title}
+\subsection{Sub Title}
+\subsubsection{Sub Sub Title}
+\lipsum[1]
+\subsubsection{Sub Sub Title}
+\lipsum[1]
+\subsection{Sub Title}
+\subsubsection{Sub Sub Title}
+\lipsum[1]
+\subsubsection{Sub Sub Title}
+\lipsum[1]
+\subsection{Sub Title}
+\subsubsection{Sub Sub Title}
+\lipsum[1]
+\subsubsection{Sub Sub Title}
+\lipsum[1]
+\newpage
+
+
+
+\newappendix{Appendix one} appendix  appendix appendix appendix appendix appendix \newpage
+\newappendix{Appendix two} appendix  appendix appendix appendix appendix appendix \newpage
+\newappendix{Appendix three} appendix  appendix appendix appendix appendix appendix \newpage
+\newappendix{Appendix four} appendix  appendix appendix appendix appendix appendix \newpage
+
+
+\clearpage
+\addcontentsline{toc}{section}{References}
+\printbibliography
+
+\end{document}

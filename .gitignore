@@ -1,0 +1,10 @@
+*
+!.gitignore
+!*.tex
+!*.bib
+!*.pdf
+!*.png
+!*.jpeg 
+!*.jpg
+!measurements-project
+!manufacturing-project
