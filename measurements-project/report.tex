@@ -10,7 +10,7 @@
 \usepackage{setspace}
 \usepackage{soul}
 \usepackage{fontspec}
- \usepackage{colortbl}
+\usepackage{colortbl}
 %\usepackage{background}
 \usepackage{caption}
 \usepackage{pgfgantt}
@@ -26,30 +26,6 @@
 \usepackage{xcolor}
 \usepackage{listings}
 \usepackage{csquotes}
-\definecolor{mGreen}{rgb}{0,0.6,0}
-\definecolor{mGray}{rgb}{0.5,0.5,0.5}
-\definecolor{mPurple}{rgb}{0.58,0,0.82}
-\definecolor{backgroundColour}{rgb}{0.95,0.95,0.92}
-
-\lstdefinestyle{CStyle}{
-    backgroundcolor=\color{backgroundColour},   
-    commentstyle=\color{mGreen},
-    keywordstyle=\color{magenta},
-    numberstyle=\tiny\color{mGray},
-    stringstyle=\color{mPurple},
-    basicstyle=\footnotesize,
-    breakatwhitespace=false,         
-    breaklines=true,                 
-    captionpos=b,                    
-    keepspaces=true,                 
-    numbers=none,                    
-    numbersep=5pt,                  
-    showspaces=false,                
-    showstringspaces=false,
-    showtabs=false,                  
-    tabsize=2,
-    language=C
-}
 
 
 
@@ -71,32 +47,7 @@
 \usepackage{listings}
 \usepackage{color}
  
-\definecolor{codegreen}{rgb}{0,0.6,0}
-\definecolor{codegray}{rgb}{0.5,0.5,0.5}
-\definecolor{codepurple}{rgb}{0.58,0,0.82}
-\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
- 
-\lstdefinestyle{mystyle}{
-    backgroundcolor=\color{backcolour},   
-    commentstyle=\color{codegreen},
-    keywordstyle=\color{magenta},
-    numberstyle=\tiny\color{codegray},
-    stringstyle=\color{codepurple},
-    basicstyle=\footnotesize,
-    breakatwhitespace=false,         
-    breaklines=true,                 
-    captionpos=b,                    
-    keepspaces=true,                 
-    numbers=left,                    
-    numbersep=5pt,                  
-    showspaces=false,                
-    showstringspaces=false,
-    showtabs=false,                  
-    tabsize=2
-}
- 
-\lstset{style=mystyle}
-\captionsetup{justification=raggedright,singlelinecheck=false}
+
 
 \newcommand\blankpage{%
     \null
@@ -108,28 +59,15 @@
 \usetikzlibrary{calc}
 \newcommand\HRule{\rule{\textwidth}{1pt}}
 
-\setmainfont[Ligatures=TeX]{Times New Roman}
-\newgeometry{top=20mm,bottom=20mm,left=10mm,right=10mm}
+
+\newgeometry{top=20mm,bottom=20mm,left=25mm,right=25mm}
 \usepackage[nottoc,numbib]{tocbibind}
 \usepackage[citestyle=reading]{biblatex}
 \addbibresource{report.bib}
 
-%\backgroundsetup{
-%color=black,
-%scale=1,
-%opacity=1,
-%angle=0,
-%contents={
-%\begin{tikzpicture}
-%\draw [line width=0.75pt] ($ (current page.north west) + (2.5cm,-1cm) $) rectangle ($ (current page.south east) + (-1cm,1cm) $);
-%\draw [line width=0.01pt] ($ (current page.north west) + (0cm,0cm) $) rectangle    ($ (current page.south east) + (0cm,0cm) $); 
-%\end{tikzpicture}
-%}
-%}
-
 \setlength{\footskip}{20pt}
 
-
+%\setmainfont{Times New Roman}
 \begin{document}
 
 \begin{titlepage}
