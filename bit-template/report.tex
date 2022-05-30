@@ -180,12 +180,12 @@ The system is being developed using the Iterative Spiral Model of Software Devel
 
 \newpage
 
-%\section*{Acknowledgments}
-%\addcontentsline{toc}{chapter}{Acknowledgments}
-%
-%I would like to thank 
-%
-%\newpage
+\section*{Acknowledgments}
+\addcontentsline{toc}{chapter}{Acknowledgments}
+
+I would like to thank my supervisor Ms. Yaalini Balathasan for her continuous guidance and support throughout the development of the project. I am forever grateful for the appreciation and support from Dr. Roshan Hewapathirana. I also would like to thank Dr. Chamila Malsiri for providing me with valuable information for the implementation of the system. It was a great opportunity to work with all of them. Thank you. 
+
+\newpage
 
 
 \newpage 
@@ -882,15 +882,100 @@ Implementation of a mobile application for easier access.
 \addcontentsline{toc}{chapter}{Appendices}
 \chapter{System Manual}
 
+Figure \ref{fig:dirlayout} shows the layout of the application. \\ 
+
+In the root of the directory, Golang binary is built and run using the command "go build -o backend" 
+
+Within the "frontend" directory, the dependencies of the frontend has to be installed before building it. It can be installed by using "npm / pnpm.io".
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.8\textwidth,scale=0.25]{images/directory-layout.png}	
+\end{center}
+\caption{Directory Layout}
+\label{fig:dirlayout}
+\end{figure}
 %\chapter{Design Documentation}
+
+
 \chapter{User Manual}
-\chapter{Management Reports}
-\chapter{Test Results}
+
+Following Figure \ref{fig:login} shows the login screen which the user is greeted with whenever they are accessing any part of the system.
+\begin{figure}[hbp]
+\begin{center}
+\includegraphics[width=0.8\textwidth,scale=0.25]{images/login-screen.png}	
+\end{center}
+\caption{Login Screen}
+\label{fig:login}
+\end{figure}
 
 
-\chapter*{Glossary}
-\addcontentsline{toc}{chapter}{Glossary}
-\printglossary[type=\acronymtype]
+
+ 
+Figure \ref{fig:dashboard} shows Dashboard layout on which the user primarily lands for further actions. This layout is to be expanded with more charts in the future.
+
+\begin{figure}[hbp]
+\begin{center}
+\includegraphics[width=0.8\textwidth,scale=0.25]{images/dashboard.png}	
+\end{center}
+\caption{Dashboard Screen}
+\label{fig:dashboard}
+\end{figure}
+
+
+
+Figure \ref{fig:search-layout} shows screen that allows the user to search for patients in the system. 
+
+\begin{figure}[hbp]
+\begin{center}
+\includegraphics[width=0.8\textwidth,scale=0.25]{images/search.png}	
+\end{center}
+\caption{Search Patients Screen}
+\label{fig:search-layout}
+\end{figure}
+
+
+
+Figure \ref{fig:patient-list} shows the list of patients in the system in a tabular manner. 
+
+
+\begin{figure}[hbp]
+\begin{center}
+\includegraphics[width=0.8\textwidth,scale=0.25]{images/patients-list.png}	
+\end{center}
+\caption{List of Patients Screen}
+\label{fig:patient-list}
+\end{figure}
+
+
+
+
+Figure \ref{fig:patient-history} shows a specific patient's historical records. 
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.8\textwidth,scale=0.25]{images/patient-history.png}	
+\end{center}
+\caption{Patient History Screen}
+\label{fig:patient-history}
+\end{figure}
+
+
+
+
+%Figure \ref{fig:patient-registration-screen} shows a form for which the patient can be registered with the system.
+%
+%\begin{figure}[h]
+%\begin{center}
+%\includegraphics[width=0.8\textwidth]{images/patient-reg-layout.png}	
+%\end{center}
+%\caption{Patient Registration Screen}
+%\label{fig:patient-registration-screen}
+%\end{figure}
+
+%\chapter*{Glossary}
+%\addcontentsline{toc}{chapter}{Glossary}
+%\printglossary[type=\acronymtype]
 
 \printbibliography[nottype=book,heading=bibliography,title={References}]
 
